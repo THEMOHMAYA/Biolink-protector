@@ -4,14 +4,17 @@
   <a href="https://github.com/THEMOHMAYA/Biolink-protector">
     <img src="https://img.shields.io/badge/My%20Repo-GitHub-black?style=for-the-badge&logo=github">
   </a>
-  <a href="https://github.com/THEMOHMAYA/BioLink-Protector/stargazers">
-    <img src="https://img.shields.io/github/stars/bisnuray/BioLink-Protector?style=flat-square&color=yellow" alt="Stars">
+
+  <a href="https://github.com/THEMOHMAYA/Biolink-protector/stargazers">
+    <img src="https://img.shields.io/github/stars/THEMOHMAYA/Biolink-protector?style=flat-square&color=yellow" alt="Stars">
   </a>
-  <a href="https://github.com/THEMOHMAYA/BioLink-Protector/network/members">
-    <img src="https://img.shields.io/github/forks/bisnuray/BioLink-Protector?style=flat-square&color=blue" alt="Forks">
+
+  <a href="https://github.com/THEMOHMAYA/Biolink-protector/network/members">
+    <img src="https://img.shields.io/github/forks/THEMOHMAYA/Biolink-protector?style=flat-square&color=blue" alt="Forks">
   </a>
-  <a href="https://github.com/THEMOHMAYA/BioLink-Protector/issues">
-    <img src="https://img.shields.io/github/issues/THEMOHMAYA/BioLink-Protector?style=flat-square&color=red" alt="Issues">
+
+  <a href="https://github.com/THEMOHMAYA/Biolink-protector/issues">
+    <img src="https://img.shields.io/github/issues/THEMOHMAYA/Biolink-protector?style=flat-square&color=red" alt="Issues">
   </a>
 </p>
 
