@@ -52,14 +52,14 @@ async def start_handler(client: Client, message):
         "**Use /help to see all available commands.**"
     )
     kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("➕ Add Me to Your Group", url=add_url)],
+        [InlineKeyboardButton("➕ Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url=add_url)],
         [
             InlineKeyboardButton("⚙️ Configure", callback_data="back"),
-            InlineKeyboardButton("🛠️ Support", url="https://t.me/FROZENTOOLS"),
+            InlineKeyboardButton("🛠️ Sᴜᴘᴘᴏʀᴛ", url="https://t.me/FROZENTOOLS"),
         ],
         [
-            InlineKeyboardButton("📦 Source", url="https://github.com/THEMOHMAYA/BioLink-Protector"),
-            InlineKeyboardButton("🗑️ Close", callback_data="close"),
+            InlineKeyboardButton("📦 Sᴏᴜʀᴄᴇ", url="https://github.com/THEMOHMAYA/BioLink-Protector"),
+            InlineKeyboardButton("🗑️ Cʟᴏsᴇ", callback_data="close"),
         ],
     ])
     await client.send_message(chat_id, text, reply_markup=kb)
@@ -86,8 +86,8 @@ async def help_handler(client: Client, message):
     bot = await client.get_me()
     add_url = f"https://t.me/{bot.username}?startgroup=true"
     kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("➕ Add to Group", url=add_url)],
-        [InlineKeyboardButton("🗑️ Close", callback_data="close")]
+        [InlineKeyboardButton("➕ Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url=add_url)],
+        [InlineKeyboardButton("🗑️ Cʟᴏsᴇ", callback_data="close")]
     ])
     await client.send_message(chat_id, help_text, reply_markup=kb)
 
@@ -119,12 +119,12 @@ async def about_handler(client: Client, message):
         "• Owner broadcast support\n"
     )
     kb = InlineKeyboardMarkup([
-        [InlineKeyboardButton("➕ Add to Group", url=add_url)],
+        [InlineKeyboardButton("➕ Aᴅᴅ Mᴇ ᴛᴏ Yᴏᴜʀ Gʀᴏᴜᴘ ➕", url=add_url)],
         [
-            InlineKeyboardButton("📦 Source", url="https://github.com/strad-dev131/BioLink-Protector"),
-            InlineKeyboardButton("🛠️ Support", url="https://t.me/TeamsXchat"),
+            InlineKeyboardButton("📦 Sᴏᴜʀᴄᴇ", url="https://github.com/strad-dev131/BioLink-Protector"),
+            InlineKeyboardButton("🛠️ Sᴜᴘᴘᴏʀᴛ", url="https://t.me/TeamsXchat"),
         ],
-        [InlineKeyboardButton("🗑️ Close", callback_data="close")],
+        [InlineKeyboardButton("🗑️ Cʟᴏsᴇ", callback_data="close")],
     ])
     await message.reply_text(text, reply_markup=kb)
 
@@ -173,7 +173,7 @@ async def command_free(client: Client, message):
     keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("🚫 Unwhitelist", callback_data=f"unwhitelist_{target.id}"),
-            InlineKeyboardButton("🗑️ Close", callback_data="close")
+            InlineKeyboardButton("🌀 Cʟᴏsᴇ 🌀", callback_data="close")
         ]
     ])
     await client.send_message(chat_id, text, reply_markup=keyboard)
@@ -202,7 +202,7 @@ async def command_unfree(client: Client, message):
     keyboard = InlineKeyboardMarkup([
         [
             InlineKeyboardButton("✅ Whitelist", callback_data=f"whitelist_{target.id}"),
-            InlineKeyboardButton("🗑️ Close", callback_data="close")
+            InlineKeyboardButton("🌀 Cʟᴏsᴇ 🌀", callback_data="close")
         ]
     ])
     await client.send_message(chat_id, text, reply_markup=keyboard)
@@ -373,7 +373,7 @@ async def callback_handler(client: Client, callback_query):
             kb = InlineKeyboardMarkup([
                 [
                     InlineKeyboardButton("Whitelist ✅", callback_data=f"whitelist_{target_id}"),
-                    InlineKeyboardButton("🗑️ Close", callback_data="close")
+                    InlineKeyboardButton("🌀 Cʟᴏsᴇ 🌀", callback_data="close")
                 ]
             ])
             await callback_query.message.edit_text(msg, reply_markup=kb)
@@ -390,7 +390,7 @@ async def callback_handler(client: Client, callback_query):
         mention = f"[{full_name}](tg://user?id={target_id})"
         kb = InlineKeyboardMarkup([
             [InlineKeyboardButton("Whitelist✅", callback_data=f"whitelist_{target_id}"),
-             InlineKeyboardButton("🗑️ Close", callback_data="close")]
+             InlineKeyboardButton("🌀 Cʟᴏsᴇ 🌀", callback_data="close")]
         ])
         await callback_query.message.edit_text(f"**✅ {mention} [`{target_id}`] has no more warnings!**", reply_markup=kb)
         return await callback_query.answer()
@@ -404,7 +404,7 @@ async def callback_handler(client: Client, callback_query):
         mention = f"[{full_name}](tg://user?id={target_id})"
         kb = InlineKeyboardMarkup([
             [InlineKeyboardButton("🚫 Unwhitelist", callback_data=f"unwhitelist_{target_id}"),
-             InlineKeyboardButton("🗑️ Close", callback_data="close")]
+             InlineKeyboardButton("🌀 Cʟᴏsᴇ 🌀", callback_data="close")]
         ])
         await callback_query.message.edit_text(f"**✅ {mention} [`{target_id}`] has been whitelisted!**", reply_markup=kb)
         return await callback_query.answer()
@@ -417,7 +417,7 @@ async def callback_handler(client: Client, callback_query):
         mention = f"[{full_name}](tg://user?id={target_id})"
         kb = InlineKeyboardMarkup([
             [InlineKeyboardButton("Whitelist✅", callback_data=f"whitelist_{target_id}"),
-             InlineKeyboardButton("🗑️ Close", callback_data="close")]
+             InlineKeyboardButton("🌀 Cʟᴏsᴇ 🌀", callback_data="close")]
         ])
         await callback_query.message.edit_text(f"**❌ {mention} [`{target_id}`] has been removed from whitelist.**", reply_markup=kb)
         return await callback_query.answer()
@@ -490,7 +490,7 @@ async def check_bio(client: Client, message):
             keyboard = InlineKeyboardMarkup([
                 [InlineKeyboardButton("❌ Cancel Warning", callback_data=f"cancel_warn_{user_id}"),
                  InlineKeyboardButton("✅ Whitelist", callback_data=f"whitelist_{user_id}")],
-                [InlineKeyboardButton("🗑️ Close", callback_data="close")]
+                [InlineKeyboardButton("🗑️ Cʟᴏsᴇ 🗑️", callback_data="close")]
             ])
             sent = await message.reply_text(warning_text, reply_markup=keyboard)
             if count >= limit:
