@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ChatPermi
 import asyncio
 import time
 
-from helper.utils import (
+from helpers.utils import (
     is_admin,
     get_config, update_config,
     increment_warning, reset_warnings,
